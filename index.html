@@ -14,20 +14,21 @@
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
   <style>
     body{
+      box-sizing: border-box;
+      padding: 2px;
       background-color: hsl(212, 45%, 89%);
-      height: 100vh;
-      display: flex;
-      justify-content: center;
-      align-items: center;
       font-family: 'Outfit', sans-serif;
     }
     body>div{
       background-color: #fff;
       width: 80%;
+      margin: 15vh auto;
+      height: auto;
       border-radius: 20px;
       padding: .8em;
     }
     img{
+      display: block;
       max-width: 100%;
       border-radius: 20px;
     }
@@ -38,14 +39,10 @@
       margin-bottom: 5px;
       margin-top: 5px;
     }
-    @media screen and (min-device-width:540px){
-      body{
-        height: 100vh;
-        font-size: smaller;
-      }
+    @media screen and (min-device-width:570px){
       body>div{
-        width: 15%;
-        height: 55%;
+        width: 20%;
+        height: 65vh;
       }
       h1{
         font-size: 20px;
@@ -61,7 +58,7 @@
 </head>
 <body>
   <div>
-    <div><img src="images/image-qr-code.png" alt="qr code component"></div>
+    <img src="images/image-qr-code.png" alt="qr code component">
 
     <h1>Improve your front-end skills by building projects</h1>
 
